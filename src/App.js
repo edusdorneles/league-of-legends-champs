@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import ChampCard from './components/ChampCard';
+import Footer from './components/Footer';
 import { useGlobal } from './providers/Global';
 
 // Styles
@@ -21,6 +22,8 @@ function App() {
           <ChampCard key={idx} champion={champions[champion]} />
         ))}        
       </Container>
+
+      <Footer />
     </div>
   );
 }
