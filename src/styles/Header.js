@@ -5,7 +5,7 @@ export const HeaderStyle = styled.header`
     color: white;
     text-align: center;
     padding: 12px 0px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     h1 {
         font-size: 20px;

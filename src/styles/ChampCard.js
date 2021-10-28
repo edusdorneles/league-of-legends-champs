@@ -4,7 +4,7 @@ export const ChampCardContainer = styled.div`
     width: 100%;
     height: 60px;
     background-color: white;        
-    border-radius: 4px;
+    border-radius: 4px;    
 
     .champion__container {
         display: flex;
