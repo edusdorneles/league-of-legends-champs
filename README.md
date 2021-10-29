@@ -48,6 +48,7 @@ $ yarn start
 As seguintes ferramentas foram utilizadas na construção deste projeto:
 
 - [React](https://pt-br.reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
 
 
 ---
