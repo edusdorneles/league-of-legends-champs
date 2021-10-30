@@ -25,6 +25,6 @@ export const PaginationButton = styled.button`
     &.active {
         background-color: #2C2F3E;
         color: white;
-        border: 1px solid white;
+        border: none;
     }
 `

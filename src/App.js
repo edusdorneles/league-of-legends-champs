@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Search from './components/Search';
 import Header from './components/Header';
 import ChampCard from './components/ChampCard';
 import Footer from './components/Footer';
@@ -6,7 +7,7 @@ import Pagination from './components/Pagination';
 import { useGlobal } from './providers/Global';
 
 // Styles
-import { Container } from './styles/Global';
+import { Container, ContainerItems } from './styles/Global';
 import './App.css';
 
 function App() {
@@ -24,19 +25,23 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
+      <Header />      
 
       <Container>
-        {currentItems.map((champion, idx) => (
-          <ChampCard key={idx} champion={champions[champion]} />
-        ))}
-      </Container>
+        <Search />
 
-      <Pagination 
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage} 
-        pages={pages} 
-      />
+        <ContainerItems>
+          {currentItems.map((champion, idx) => (
+            <ChampCard key={idx} champion={champions[champion]} />
+          ))}
+        </ContainerItems>
+
+        <Pagination 
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage} 
+          pages={pages} 
+        />
+      </Container>
 
       <Footer />
     </div>
