@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${props => props.theme.colors.background};
     }
 
-    #root {min-height: 100vh}
+    html, body, #root {min-height: 100vh}
 `;
 
 export const Container = styled.div`    

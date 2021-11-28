@@ -6,7 +6,7 @@ export const HeaderStyle = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     
     h1 {
         color: white;

@@ -5,6 +5,7 @@ import { useGlobal } from "providers/Global"
 import Header from "components/Header/Header"
 import ChampionCard from "components/ChampionCard/ChampionCard"
 import Pagination from "components/Pagination/Pagination"
+import Footer from "components/Footer/Footer"
 
 // Styles
 import { Container, ContainerItems } from "styles/Global"
@@ -24,7 +25,7 @@ const App = () => {
   
 
   return (
-    <div>
+    <>
       <Header />
 
       <Container>
@@ -40,7 +41,9 @@ const App = () => {
           pages={pages} 
         />
       </Container>
-    </div>
+
+      <Footer />
+    </>
   )
 }
 
