@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import App from './App';
+import { GlobalProvider } from 'providers/Global';
 
 // Styles
 import { GlobalStyle } from 'styles/Global';
@@ -8,9 +9,11 @@ import { DefaultTheme } from 'styles/Theme';
 
 
 ReactDOM.render(
-  <ThemeProvider theme={DefaultTheme}>
-    <GlobalStyle />
-    <App />
-  </ThemeProvider>,
+  <GlobalProvider>
+    <ThemeProvider theme={DefaultTheme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </GlobalProvider>,
   document.getElementById('root')
 );
